@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/watch_view_stub"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nook.assessment.activity.ActivityCPage2"
+    tools:deviceIds="wear">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/choice11Title"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="14dp"
+            android:background="@color/cb"
+            android:text="11.อาหารที่ปรุงเสร็จแล้วเก็บในภาชนะที่สะอาด มีการปกปิด วางสูงจากพื้นอย่างน้อย 60 ซม."
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/choice11RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/choice11RadioTrue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:checked="true"
+                android:text="@string/assess2"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/choice11RadioFalse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="@string/assess3"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/choice11Comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/choice12Title"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/cb"
+            android:text="12.มีตู้สำหรับปกปิดอาหรที่ปรุงเสร็จแล้ว และด้านหน้าของตู้ต้องเป็นกระจก"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/choice12RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/choice12RadioTrue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:checked="true"
+                android:text="@string/assess2"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/choice12RadioFalse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="@string/assess3"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/choice12Comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/choice13Title"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/cb"
+            android:text="13.น้ำดื่ม เครื่องดื่ม ใส่ในภาชนะที่สะอาด มีฝาปิด มีก๊อกหรือทางรินน้ำ หรือมีอุปกรณ์ที่มีด้ามสำหรับตักโดยเฉพาะ และวางสูงจากพื้นอย่างน้อย 60 ซม."
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/choice13RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/choice13RadioTrue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:checked="true"
+                android:text="@string/assess2"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/choice13RadioFalse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="@string/assess3"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/choice13Comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/choice14Title"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/cb"
+            android:text="14.น้ำแข็งที่ใช้บริโภคต้องสะอาด ใส่ในภาชนะที่สะอาด มีฝาปิด มีอุปกรณ์ที่มีด้ามสำหรับคีบ หรือตักโดยเฉพาะ วางสูงจากพื้นอย่างน้อย 60 ซม. และไม่มีสิงของอื่นแช่รวมไว้"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/choice14RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/choice14RadioTrue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:checked="true"
+                android:text="@string/assess2"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/choice14RadioFalse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="@string/assess3"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/choice14Comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/activity05BackBtn"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="?android:attr/actionModeCloseDrawable"
+                android:onClick="onClickSave" />
+
+            <Button
+                android:id="@+id/activity05NextBtn"
+                android:layout_width="50sp"
+                android:layout_height="40sp"
+                android:layout_alignBaseline="@+id/activityHospitalBack"
+                android:layout_alignBottom="@+id/activityHospitalBack"
+                android:layout_alignParentEnd="true"
+                android:background="@android:drawable/title_bar"
+                android:onClick="onClickNext"
+                android:text="ต่อไป" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

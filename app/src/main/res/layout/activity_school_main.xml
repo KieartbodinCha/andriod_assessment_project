@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/watch_view_stub"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context="com.example.nook.assessment.activity.SchoolInfoActivity"
+    tools:deviceIds="wear">
+
+    <TableLayout
+        android:id="@+id/VISIBLE"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/schoolMainHeaderLabel"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.05"
+            android:background="#b3ddf9"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:text="@string/main_school"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/placeNameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text1"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/placeName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@android:drawable/editbox_dropdown_light_frame"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/canttenNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text2"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/canteenName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@android:drawable/editbox_dropdown_light_frame"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/ownerNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="ชื่อเจ้าของร้าน"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/ownerName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@android:drawable/editbox_dropdown_light_frame" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/departmentNameLable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text3"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/departmentName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@android:drawable/editbox_dropdown_light_frame"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/addressNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text4"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/addressNameImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="-100dp"
+                android:layout_marginRight="400dp"
+                android:src="@drawable/school1" />
+
+            <EditText
+                android:id="@+id/addressName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="-350dp"
+                android:background="@android:drawable/editbox_dropdown_light_frame"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/districtNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="อำเภอ"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/districtName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:drawable/editbox_dropdown_light_frame"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/provinceLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="จังหวัด"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/province"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:drawable/editbox_dropdown_light_frame"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/studentCountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text6"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/studentCount"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="200dp"
+                android:background="@android:drawable/editbox_dropdown_light_frame"
+                android:inputType="textPersonName" />
+
+            <ImageView
+                android:id="@+id/studentCountImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="-200dp"
+                android:src="@drawable/sd" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/customerCountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text5"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/customerCount"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="200dp"
+                android:background="@android:drawable/editbox_dropdown_light_frame"
+                android:ems="14"
+                android:inputType="textPersonName" />
+
+            <ImageView
+                android:id="@+id/customerCountImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="-200dp"
+                android:src="@drawable/cm" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/operationCountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text7"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/operationCount"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="200dp"
+                android:background="@android:drawable/editbox_dropdown_light_frame"
+                android:ems="14"
+                android:inputType="textPersonName" />
+
+            <ImageView
+                android:id="@+id/operationCountImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="-200dp"
+                android:src="@mipmap/cook" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/assessorNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ชื่อผู้ประเมิน"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/assessorName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@android:drawable/editbox_dropdown_light_frame"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/assessmentCountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ครั้งที่ประเมิน"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/assessmentCount"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/editbox_dropdown_light_frame"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/assessmentDateLable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="วัน/เดือน/ปี"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/assessmentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@android:drawable/editbox_dropdown_light_frame"
+                android:inputType="date" />
+        </TableRow>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/schoolMainNextBtn"
+                android:layout_width="50sp"
+                android:layout_height="40sp"
+                android:layout_marginLeft="280sp"
+                android:background="@android:drawable/title_bar"
+                android:onClick="onClickNextFromMain"
+                android:text="ต่อไป" />
+
+            <Button
+                android:id="@+id/schoolMainBackBtn"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="?android:attr/actionModeCloseDrawable"
+                android:onClick="onClickBackFromMain" />
+
+        </RelativeLayout>
+    </TableLayout>
+</ScrollView>

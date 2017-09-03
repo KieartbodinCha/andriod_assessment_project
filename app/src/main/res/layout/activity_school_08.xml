@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/watch_view_stub"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.nook.assessment.activity.ActivityDPage3"
+    tools:deviceIds="wear">
+
+    <ImageView
+        android:id="@+id/activity08Image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/cn11" />
+
+    <TextView
+        android:id="@+id/choice20Title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/cb"
+        android:text="20. ช้อน ส้อม ตะเกียบ วางตั้งเอาด้ามขึ้นในภาชนะโปร่งสะอาดหรือวางเป็นระเบียบในภาชนะที่สะอาดและมีการปกปิดตั้งสูงจากพื้นอย่างน้อย 60 ซม."
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/choice20RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/choice20True"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:checked="true"
+            android:text="ผ่าน"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/choice20False"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="ไม่ผ่าน"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/choice20Comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/choice21title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/cb1"
+        android:text="21. เขียงต้องมีสภาพดี ไม่แตกร้าวหรือเป็นช่อง มีเขียงใช้เฉพาะอาหารสุกและอาหารดิบแยกจากัน มีฝาชีครอบ(ยกเว้นครัวที่มีการป้องกันแมลงวันแล้ว)"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/choice21RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/choice21True"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:checked="true"
+            android:text="ผ่าน"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/choice21False"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="ไม่ผ่าน"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/choice21Comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/activity08NextBtn"
+            android:layout_width="50sp"
+            android:layout_height="40sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/activityHospitalBack"
+            android:background="@android:drawable/title_bar"
+            android:onClick="onClickNext"
+            android:text="ต่อไป" />
+
+        <Button
+            android:id="@+id/activity04BackBtn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="?android:attr/actionModeCloseDrawable"
+            android:onClick="onClickBack" />
+    </RelativeLayout>
+</LinearLayout>

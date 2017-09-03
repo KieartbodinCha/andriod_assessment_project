@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_school13"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.nook.assessment.activity.ActivityGPage2">
+
+    <ImageView
+        android:id="@+id/assessmentGImage2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/cn12" />
+
+    <TextView
+        android:id="@+id/choice29"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:background="@color/cb1"
+        android:text="29. ต้องเป็นผู้มีสุขภาพดี ไม่เป็นโรคติดต่อ ไม่เป็นโรค หลักฐานการตรวจสุขภาพในปีนั้นให้ตรวจสอบได้"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/choice29RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/choice29True"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:checked="true"
+            android:text="ผ่าน"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/choice29False"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="ไม่ผ่าน"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/choice29Comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/choice30"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/cb"
+        android:text="30. มีสุขนิสัยที่ดี เช่น ตัดเล็บสั้น ไม่สูบบุหรี่ในขณะปฏิบัติงาน ไม่ใช้มือหยิบจับอาหารที่ปรุงเสร็จแล้วโดยตรง"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/choice30RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/choice30True"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:checked="true"
+            android:text="ผ่าน"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/choice30False"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="72dp"
+            android:text="ไม่ผ่าน"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/choice30Comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/activity12BackBtn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="?android:attr/actionModeCloseDrawable"
+            android:onClick="onClickBack" />
+
+        <Button
+            android:id="@+id/activity12NextBtn"
+            android:layout_width="50sp"
+            android:layout_height="40sp"
+            android:layout_alignBaseline="@+id/activityHospitalBack"
+            android:layout_alignBottom="@+id/activityHospitalBack"
+            android:layout_alignParentEnd="true"
+            android:background="@android:drawable/title_bar"
+            android:onClick="onClickNext"
+            android:text="ต่อไป" />
+    </RelativeLayout>
+
+</LinearLayout>

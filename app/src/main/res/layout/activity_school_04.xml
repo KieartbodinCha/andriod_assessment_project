@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/watch_view_stub"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nook.assessment.activity.ActivityCPage1"
+    tools:deviceIds="wear">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity04AssessmentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBack"
+            android:gravity="center"
+            android:text="ค.ตัวอาหาร น้ำ น้ำแข็ง เครื่องดื่ม"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/activity04FooterImg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/cn4" />
+
+        <TextView
+            android:id="@+id/activity04SealedWthDoc"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@color/cb"
+            android:text="8.อาหารและเครื่องดื่มในภาชะที่ปิดสนิท ต้องมีเอกสารบนอาหาร"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/activity04SealedWthDocRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/activity04SealedWthDocRadioTrue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:checked="true"
+                android:text="@string/assess2"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/activity04SealedWthDocRadioFalse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="@string/assess3"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/activity04SealedWthDocComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/activity04Fresh"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/cb"
+            android:text="9.อาหารสดและอาหารแห้งมีคุณภาพดี แยกเก็บ ไม่ปะปนกัน วางสูงจากพื้นอย่างน้อย 60 ซม. อาหารสดต้องล้างก่อนำมาปรุง"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/activity04FreshRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/activity04FreshRadioTrue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:checked="true"
+                android:text="@string/assess2"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/activity04FreshRadioFalse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="@string/assess3"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/activity04FreshComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/activity04SealedAndQuality"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/cb1"
+            android:text="10.อาหารและเครื่องดื่มในภาชนะบรรจุปิดสนิท มีคุณภาพดี เก็บเป็นระเบียบ สูงจากพื้นอย่างน้อย 30 ซม."
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/activity04SealedAndQualityRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/activity04SealedAndQualityRadioTrue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:checked="true"
+                android:text="@string/assess2"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/activity04SealedAndQualityRadioFalse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="@string/assess3"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/activity04SealedAndQualityComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/activity04BackBtn"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="?android:attr/actionModeCloseDrawable"
+                android:onClick="onClickBack" />
+
+            <Button
+                android:id="@+id/activity04NextBtn"
+                android:layout_width="50sp"
+                android:layout_height="40sp"
+                android:layout_alignBaseline="@+id/activityHospitalBack"
+                android:layout_alignBottom="@+id/activityHospitalBack"
+                android:layout_alignParentEnd="true"
+                android:background="@android:drawable/title_bar"
+                android:onClick="onClickNext"
+                android:text="ต่อไป" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

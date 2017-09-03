@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_school15"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nook.assessment.activity.ActivityResult">
+
+
+    <TextView
+        android:id="@+id/passCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="จำนวนข้อที่ผ่าน"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passCount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="ผลการประเมิน"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="ผ่าน"
+        android:textSize="25dp" />
+
+    <ImageView
+
+        android:id="@+id/resultImage"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="31dp"
+        android:src="@mipmap/train" />
+
+    <Button
+        android:id="@+id/backToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/resultImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="193dp"
+        android:onClick="onClickNext"
+        android:text="กลับสู่หน้าหลัก" />
+
+    <TextView
+        android:id="@+id/passCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passCountText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="ข้อ"
+        android:textSize="25dp" />
+
+</RelativeLayout>
