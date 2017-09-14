@@ -2,11 +2,11 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion '25.0.0'
+    buildToolsVersion '25.0.2'
 //    useLibrary 'org.apache.http.legacy'
     defaultConfig {
-        applicationId "com.example.nook.assessent1"
-        minSdkVersion 23
+        applicationId "com.example.nook.assessment"
+        minSdkVersion 24
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
@@ -31,5 +31,5 @@ dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.5.0'
     compile 'com.mcxiaoke.volley:library-aar:1.0.0'
     compile 'com.loopj.android:android-async-http:1.4.9'
-
+    compile 'commons-codec:commons-codec:1.10'
 }

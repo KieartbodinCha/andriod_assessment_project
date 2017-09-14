@@ -3,16 +3,16 @@ package com.example.nook.assessment.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Base64;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.Toast;
-
 
 import com.example.nook.assessment.R;
 import com.example.nook.assessment.database.DatabaseSchool;
+import com.example.nook.assessment.manager.CFAS;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.loopj.android.http.SyncHttpClient;
@@ -76,14 +76,15 @@ public class SchoolListActivity extends AppCompatActivity {
 
     private void synch_new() {
         //TODO Change this
-        String url = "http://192.168.1.103:8090/assessment-service/api/savedata.php";
+        String url = CFAS.END_POINT + "api/savedata.php";
+//        String url = "http://192.168.1.103:8888/api_assessment_project/api/savedata.php";
+//        String url = "http://192.168.1.100:8090/assessment-service/api/savedata.php";
         SyncHttpClient client = new SyncHttpClient();
         client.addHeader("Content-Type", "application/x-www-form-urlencoded");
         client.post(url, createRequestParams(), new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 super.onSuccess(statusCode, headers, response);
-
             }
 
             @Override
@@ -93,7 +94,6 @@ public class SchoolListActivity extends AppCompatActivity {
 
             @Override
             public void onSuccess(int statusCode, Header[] headers, String responseString) {
-                System.out.println(responseString);
                 super.onSuccess(statusCode, headers, responseString);
             }
 
@@ -118,10 +118,32 @@ public class SchoolListActivity extends AppCompatActivity {
         DatabaseSchool mDb = new DatabaseSchool(this);
         List<HashMap<String, Object>> schoolList = mDb.SelectAllData();
         RequestParams params = new RequestParams();
-//        Gson gson = new Gson();
-//        String jsonString = gson.toJson(schoolList);
+        params.setContentEncoding("UTF-8");
+        if (schoolList != null && schoolList.size() > 0) {
+            for (HashMap<String, Object> o : schoolList) {
+                if (o.get("IMAGE1") != null) {
+                    o.put("IMAGE1_BASE64", imgToString((byte[]) o.get("IMAGE1")));
+                }
+                if (o.get("IMAGE2") != null) {
+                    o.put("IMAGE2_BASE64", imgToString((byte[]) o.get("IMAGE2")));
+                }
+                if (o.get("IMAGE3") != null) {
+                    o.put("IMAGE3_BASE64", imgToString((byte[]) o.get("IMAGE3")));
+                }
+                if (o.get("IMAGE4") != null) {
+                    o.put("IMAGE4_BASE64", imgToString((byte[]) o.get("IMAGE4")));
+                }
+            }
+        }
         params.put("data", schoolList);
         return params;
     }
+
+    private String imgToString(byte[] bytes) {
+        String encodedString = Base64.encodeToString(bytes, 0);
+        return encodedString;
+    }
+
+
 }
 

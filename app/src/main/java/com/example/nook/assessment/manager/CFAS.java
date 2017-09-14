@@ -1,6 +1,7 @@
 package com.example.nook.assessment.manager;
 
 import com.example.nook.assessment.model.School;
+import com.example.nook.assessment.model.SimpleModel;
 
 
 /**
@@ -9,7 +10,12 @@ import com.example.nook.assessment.model.School;
 public class CFAS {
 //public class CFAS extends AppCompatActivity {
 
+    //TODO: Change WebURL
+    public static final String END_POINT = "http://172.23.248.130:8888/api_assessment_project/";
+
     private static CFAS instance;
+    public SimpleModel[] provinces;
+    public SimpleModel[] amphurs;
 
     private School school;
 

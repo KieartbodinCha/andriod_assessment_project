@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -85,7 +86,7 @@ public class ActivityUploadImage extends Activity {
 
     private byte[] convertToBytes(Bitmap image) {
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        image.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        image.compress(Bitmap.CompressFormat.PNG, 50, stream);
         byte[] byteArray = stream.toByteArray();
         return byteArray;
     }
