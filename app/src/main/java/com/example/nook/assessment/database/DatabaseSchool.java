@@ -15,7 +15,7 @@ import java.util.List;
 
 public class DatabaseSchool extends SQLiteOpenHelper {
     private static final String DB_NAME = "Asses3";
-    private static final int DB_VERSION = 6;
+    private static final int DB_VERSION = 12;
     private static final String DB_TABLE = "School";
 
     public DatabaseSchool(Context context) {
@@ -46,22 +46,20 @@ public class DatabaseSchool extends SQLiteOpenHelper {
         sqlCreateTable.append(" BASIC_TRAIN TEXT, ");
         sqlCreateTable.append(" BASIC_SERVICE_TYPE TEXT, ");
         sqlCreateTable.append(" BASIC_LUNCH_ORGANIZE TEXT, ");
-
         sqlCreateTable.append(" CHOICE1 TEXT, CHOICE2 TEXT, CHOICE3 TEXT, CHOICE4 TEXT, CHOICE5 TEXT, ");
         sqlCreateTable.append(" CHOICE6 TEXT, CHOICE7 TEXT, CHOICE8 TEXT, CHOICE9 TEXT, CHOICE10 TEXT, ");
         sqlCreateTable.append(" CHOICE11 TEXT, CHOICE12 TEXT, CHOICE13 TEXT, CHOICE14 TEXT, CHOICE15 TEXT, ");
         sqlCreateTable.append(" CHOICE16 TEXT, CHOICE17 TEXT, CHOICE18 TEXT, CHOICE19 TEXT, CHOICE20 TEXT, ");
         sqlCreateTable.append(" CHOICE21 TEXT, CHOICE22 TEXT, CHOICE23 TEXT, CHOICE24 TEXT, CHOICE25 TEXT, ");
         sqlCreateTable.append(" CHOICE26 TEXT, CHOICE27 TEXT, CHOICE28 TEXT, CHOICE29 TEXT, CHOICE30 TEXT, ");
-
         sqlCreateTable.append(" COMMENT1 TEXT, COMMENT2 TEXT, COMMENT3 TEXT, COMMENT4 TEXT, COMMENT5 TEXT, ");
         sqlCreateTable.append(" COMMENT6 TEXT, COMMENT7 TEXT, COMMENT8 TEXT, COMMENT9 TEXT, COMMENT10 TEXT, ");
         sqlCreateTable.append(" COMMENT11 TEXT, COMMENT12 TEXT, COMMENT13 TEXT, COMMENT14 TEXT, COMMENT15 TEXT, ");
         sqlCreateTable.append(" COMMENT16 TEXT, COMMENT17 TEXT, COMMENT18 TEXT, COMMENT19 TEXT, COMMENT20 TEXT, ");
         sqlCreateTable.append(" COMMENT21 TEXT, COMMENT22 TEXT, COMMENT23 TEXT, COMMENT24 TEXT, COMMENT25 TEXT, ");
         sqlCreateTable.append(" COMMENT26 TEXT, COMMENT27 TEXT, COMMENT28 TEXT, COMMENT29 TEXT, COMMENT30 TEXT, ");
-
-        sqlCreateTable.append(" IMAGE1 BLOB, IMAGE2 BLOB, IMAGE3 BLOB, IMAGE4 BLOB ");
+        sqlCreateTable.append(" IMAGE1 BLOB, IMAGE2 BLOB, IMAGE3 BLOB, IMAGE4 BLOB, ");
+        sqlCreateTable.append(" RESULT TEXT ");
 
         sqlCreateTable.append(" ); ");
 
@@ -252,6 +250,8 @@ public class DatabaseSchool extends SQLiteOpenHelper {
             contentValues.put("IMAGE2", school.getImg2());
             contentValues.put("IMAGE3", school.getImg3());
             contentValues.put("IMAGE4", school.getImg4());
+
+            contentValues.put("RESULT", school.getResult());
 
             rows = databaseConnection.insert(DB_TABLE, null, contentValues);
         } catch (Exception e) {

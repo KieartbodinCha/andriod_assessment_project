@@ -101,6 +101,7 @@ public class School implements Serializable {
     private byte[] img3;
     private byte[] img4;
 
+    private String result;
 
     public String getPlaceName() {
         return placeName;
@@ -798,6 +799,14 @@ public class School implements Serializable {
         this.img4 = img4;
     }
 
+    public String getResult() {
+        return result;
+    }
+
+    public void setResult(String result) {
+        this.result = result;
+    }
+
     @Override
     public String toString() {
         return "School{" +
@@ -888,6 +897,7 @@ public class School implements Serializable {
                 ", img2=" + Arrays.toString(img2) +
                 ", img3=" + Arrays.toString(img3) +
                 ", img4=" + Arrays.toString(img4) +
+                ", result='" + result + '\'' +
                 '}';
     }
 }

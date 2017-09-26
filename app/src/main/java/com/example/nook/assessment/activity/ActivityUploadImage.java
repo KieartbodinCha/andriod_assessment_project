@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -218,20 +217,24 @@ public class ActivityUploadImage extends Activity {
         Log.i("TAG", "onCreate: " + count);
         Log.i("TAG", "onCreate: " + count2);
 
-
+        String result = "";
         String txtResult = "";
         if (count >= 30) {
             txtResult = "ผ่าน";
+            result = "PASS";
         } else if (count2 >= 20) {
             txtResult = "ผ่าน";
+            result = "PASS";
         } else {
             txtResult = "ไม่ผ่าน";
+            result = "NOT PASS";
         }
 
         intent.putExtra("txtResult", txtResult);
         intent.putExtra("txtCount", count);
         ///เพิ่มมาเก็บข้อมูลตอนท้าย
         // Dialog
+        CFAS.getInstance().getSchool().setResult(result);
 
         DatabaseSchool mDb = new DatabaseSchool(this);
         // Save Data
